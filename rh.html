@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Trabalhe Conosco Luten: Valorizamos talentos com Benefícios Reais (VR, Cesta Básica, Seguro de Vida). Envie seu currículo.">
+    <meta name="keywords" content="Vagas, Emprego, Portaria, Limpeza, RH Luten, Trabalhe Conosco">
+    <meta name="author" content="Grupo Luten">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Trabalhe Conosco | Luten Engenharia de Serviços">
+    <meta property="og:description"
+        content="Faça parte de uma empresa que valoriza você. Confira nossas vagas e benefícios.">
+
+    <title>Trabalhe Conosco | Luten Engenharia de Serviços</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">LUTEN</a>
+
+            <button class="mobile-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="sobre.html" class="nav-link">O Grupo</a></li>
+                    <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li><a href="rh.html" class="nav-link active">RH</a></li>
+                    <li><a href="compliance.html" class="nav-link">Compliance</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Talentos Luten</h1>
+                <p class="page-subtitle">Valorizamos quem constrói nossa excelência. Venha fazer parte do time.</p>
+            </div>
+        </section>
+
+        <section class="rh-content">
+            <div class="container rh-grid">
+
+                <div class="benefits-section">
+                    <h2 class="section-title-small">Por que trabalhar na Luten?</h2>
+                    <p class="benefits-intro">Oferecemos mais do que um emprego: oferecemos dignidade e estabilidade.
+                    </p>
+
+                    <div class="benefits-list">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🚌</div>
+                            <h3>Vale Transporte</h3>
+                            <p>Mobilidade garantida para seu deslocamento.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🍽️</div>
+                            <h3>Vale Refeição</h3>
+                            <p>Alimentação de qualidade para todos.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🧺</div>
+                            <h3>Cesta Básica</h3>
+                            <p>Apoio mensal para o sustento da família.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🏆</div>
+                            <h3>Prêmio Assiduidade</h3>
+                            <p>Reconhecimento financeiro para quem não falta.</p>
+                        </div>
+                    </div>
+
+                    <div class="risk-zero-card" style="margin-top: 3rem;">
+                        <h2>Garantia para Clientes</h2>
+                        <p>Para nossos clientes, oferecemos <strong>Substituição Imediata</strong> em casos de faltas ou
+                            férias, sem custo adicional.</p>
+                    </div>
+                </div>
+
+                <div class="application-section">
+                    <div class="form-card">
+                        <h2>Candidatar-se</h2>
+                        <form class="rh-form">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefone">Telefone / WhatsApp</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="vaga">Interesse na Vaga</label>
+                                <select id="vaga" name="vaga" required>
+                                    <option value="" disabled selected>Selecione uma opção</option>
+                                    <option value="limpeza">Auxiliar de Limpeza</option>
+                                    <option value="portaria">Controlador de Acesso / Portaria</option>
+                                    <option value="jardinagem">Jardinagem</option>
+                                    <option value="recepcao">Recepção</option>
+                                    <option value="banco">Banco de Talentos</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Enviar Candidatura</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="#" class="logo" style="margin-bottom: 1rem; display: block;">LUTEN</a>
+                    <p>Referência nacional em terceirização de serviços e segurança patrimonial. Compromisso com a
+                        excelência e risco zero para nossos parceiros.</p>
+                </div>
+                <div class="footer-col footer-map">
+                    <h4>Mapa do Site</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre o Grupo</a></li>
+                        <li><a href="servicos.html">Nossos Serviços</a></li>
+                        <li><a href="rh.html">Carreiras (RH)</a></li>
+                        <li><a href="compliance.html">Compliance Jurídico</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Fale Conosco</h4>
+                    <p>📧 tenoriolt@outlook.com.br</p>
+                    <p>📞 (11) 99999-9999</p>
+                    <p>📍 São Paulo, SP</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grupo Luten. Todos os direitos reservados.</p>
+                <div class="dymfig-seal">
+                    Desenvolvido por Dymfig Solutions
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
