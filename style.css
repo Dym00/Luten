@@ -1384,3 +1384,465 @@ h3 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     font-size: 0.9rem;
 }
+
+/* --- New Responsive Utilities for Content Refinement --- */
+
+/* Home: Intro Grid */
+.home-intro {
+    padding: 5rem 0;
+    background: #fff;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.intro-col h2 {
+    text-align: left;
+    border-left: 4px solid var(--color-gold);
+    padding-left: 1rem;
+}
+
+.intro-col p {
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.destaque-wrapper {
+    text-align: center;
+    background: var(--color-white-ice);
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--color-gold);
+    box-shadow: var(--shadow-sm);
+}
+
+.destaque-wrapper h3 {
+    color: var(--color-luten-deep);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.destaque-wrapper p {
+    font-size: 1.3rem;
+    color: var(--color-luten-slate);
+    font-weight: 500;
+}
+
+/* Compliance: Methodology Steps */
+.methodology-section {
+    margin-bottom: 4rem;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.step-card {
+    background: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    border-top: 3px solid var(--color-luten-steel);
+    height: 100%;
+}
+
+/* Compliance: General Benefits */
+.benefits-general-section {
+    margin-top: 4rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.benefit-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Services: List Tags */
+.services-overview {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.service-tag {
+    background: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid var(--color-gold);
+    color: var(--color-luten-deep);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Contato: Client Badges */
+.clients-list-section {
+    padding: 4rem 0;
+    background-color: var(--color-white-ice);
+}
+
+.clients-badge-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.client-badge {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    color: #555;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: var(--shadow-sm);
+}
+
+/* RH: Sections */
+.recruitment-section,
+.motivation-section,
+.support-section {
+    margin-bottom: 3rem;
+}
+
+.recruitment-section p,
+.motivation-section p,
+.support-section p {
+    text-align: justify;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* --- Mobile Responsive Overrides --- */
+@media (max-width: 768px) {
+
+    /* Home: Stack Intro Grid */
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .destaque-wrapper {
+        padding: 2rem 1.5rem;
+    }
+
+    .destaque-wrapper p {
+        font-size: 1.1rem;
+    }
+
+    /* Compliance: Adjust Grids */
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Services: Tags */
+    .service-tags {
+        justify-content: center;
+    }
+
+    /* General Padding Adjustments */
+    .home-intro,
+    .clients-list-section {
+        padding: 3rem 0;
+    }
+}
+
+/* Sobre: Content Cleanup */
+.values-list {
+    margin-top: 1rem;
+    color: #555;
+    list-style: circle;
+    padding-left: 1.5rem;
+}
+
+.workflow-section {
+    margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+    .workflow-section {
+        margin-top: 3rem;
+    }
+}
+
+/* --- Refined RH Page Layout --- */
+
+/* Benefits Grid */
+.benefits-container {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.benefits-grid-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.benefits-grid-display .benefit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.benefits-grid-display .benefit-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-gold);
+}
+
+.benefits-grid-display .benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.benefits-grid-display h3 {
+    font-size: 1rem;
+    color: #444;
+    font-weight: 600;
+}
+
+/* Info Grid (Motivation, Substitution, Support) */
+.info-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.info-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    border-top: 4px solid var(--color-luten-steel);
+}
+
+.info-card h3 {
+    color: var(--color-luten-deep);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.info-card p {
+    font-size: 0.95rem;
+    text-align: justify;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Application Form Full Width */
+.application-full-section {
+    background: linear-gradient(135deg, var(--color-luten-deep) 0%, #1a2a3a 100%);
+    padding: 5rem 0;
+    color: white;
+    margin-top: 4rem;
+}
+
+.form-wrapper-centered {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-header-center {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-header-center h2 {
+    color: var(--color-gold);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-header-center p {
+    color: #ccc;
+}
+
+/* Responsive Overrides for RH */
+@media (max-width: 768px) {
+    .benefits-grid-display {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 cols on mobile */
+        gap: 1rem;
+    }
+
+    .info-grid-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .form-wrapper-centered {
+        padding: 1.5rem;
+    }
+
+    .application-full-section {
+        padding: 3rem 0;
+    }
+
+    .application-full-section {
+        padding: 3rem 0;
+    }
+}
+
+/* --- Refined Services Page Layout --- */
+
+/* Clickable Service Tags */
+.service-tag {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.service-tag:hover {
+    background-color: var(--color-gold);
+    color: var(--color-luten-deep);
+    border-color: var(--color-gold);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Card Row (Zig-Zag Modern) */
+.service-card-row {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem 0;
+    justify-content: space-between;
+}
+
+/* Alternating Layout (Desktop Only) */
+.service-card-row:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.service-icon-wrapper {
+    flex: 0 0 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.service-content-wrapper {
+    flex: 1;
+}
+
+.service-content-wrapper h2 {
+    font-size: 2rem;
+    color: var(--color-luten-deep);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.service-content-wrapper h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--color-gold);
+    margin-top: 0.5rem;
+}
+
+.service-content-wrapper p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Scroll Offset for Anchors */
+html {
+    scroll-behavior: smooth;
+}
+
+.service-card-row[id] {
+    scroll-margin-top: 120px;
+    /* Offset for fixed header */
+}
+
+/* Mobile Responsive Services */
+@media (max-width: 768px) {
+    .service-card-row {
+        flex-direction: column !important;
+        /* Force vertical stack */
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
+        /* Added horizontal padding */
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+        /* Subtle card look on mobile */
+        margin-bottom: 2rem;
+    }
+
+    .service-card-row .detail-icon {
+        width: 100px;
+        height: 100px;
+        flex: 0 0 100px;
+        margin: 0 auto;
+    }
+
+    .service-content-wrapper h2 {
+        font-size: 1.6rem;
+    }
+
+    .service-content-wrapper h2::after {
+        margin: 0.5rem auto 0;
+        /* Center underline */
+    }
+
+    .service-content-wrapper p {
+        text-align: center;
+        /* Center text on mobile for better balance */
+    }
+
+    .service-list {
+        text-align: left;
+        display: inline-block;
+        /* Keep list left-aligned but centered block */
+    }
+}

@@ -59,74 +59,128 @@
         </section>
 
         <section class="rh-content">
-            <div class="container rh-grid">
+            <div class="container">
 
-                <div class="benefits-section">
-                    <h2 class="section-title-small">Por que trabalhar na Luten?</h2>
-                    <p class="benefits-intro">Oferecemos mais do que um emprego: oferecemos dignidade e estabilidade.
-                    </p>
+                <!-- 1. Recrutamento (Full Width) -->
+                <div class="recruitment-section">
+                    <h2 class="section-title-small">Recrutamento e Seleção</h2>
+                    <p>Recrutar com cuidado é o início de uma boa execução. Durante o processo de recrutamento de
+                        profissionais, buscamos funcionários que residam em áreas próximas ao cliente. Contudo,
+                        priorizamos a qualidade dos serviços e a experiência dos colaboradores. No momento da seleção,
+                        buscamos profissionais adequados ao perfil acordado entre a Luten e o cliente. Além disso, todos
+                        os profissionais recrutados pela Luten passam por um processo de integração, em que recebem
+                        orientações essenciais para a correta postura e execução dos respectivos serviços.</p>
+                </div>
 
-                    <div class="benefits-list">
+                <div class="divider-full"></div>
+
+                <!-- 2. Benefits Grid (Compact & Nice) -->
+                <div class="benefits-container">
+                    <div class="benefits-header">
+                        <h2 class="section-title-small">Por que trabalhar na Luten?</h2>
+                        <p class="benefits-intro">Oferecemos mais do que um emprego: oferecemos dignidade e
+                            estabilidade.</p>
+                    </div>
+
+                    <div class="benefits-grid-display">
                         <div class="benefit-card">
                             <div class="benefit-icon">🚌</div>
                             <h3>Vale Transporte</h3>
-                            <p>Mobilidade garantida para seu deslocamento.</p>
                         </div>
                         <div class="benefit-card">
                             <div class="benefit-icon">🍽️</div>
                             <h3>Vale Refeição</h3>
-                            <p>Alimentação de qualidade para todos.</p>
                         </div>
                         <div class="benefit-card">
                             <div class="benefit-icon">🧺</div>
                             <h3>Cesta Básica</h3>
-                            <p>Apoio mensal para o sustento da família.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🤝</div>
+                            <h3>Assistência Social</h3>
                         </div>
                         <div class="benefit-card">
                             <div class="benefit-icon">🏆</div>
                             <h3>Prêmio Assiduidade</h3>
-                            <p>Reconhecimento financeiro para quem não falta.</p>
                         </div>
-                    </div>
-
-                    <div class="risk-zero-card" style="margin-top: 3rem;">
-                        <h2>Garantia para Clientes</h2>
-                        <p>Para nossos clientes, oferecemos <strong>Substituição Imediata</strong> em casos de faltas ou
-                            férias, sem custo adicional.</p>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🛡️</div>
+                            <h3>Seguro de Vida</h3>
+                        </div>
                     </div>
                 </div>
 
-                <div class="application-section">
-                    <div class="form-card">
-                        <h2>Candidatar-se</h2>
-                        <form class="rh-form">
+                <div class="divider-full"></div>
+
+                <!-- 3. Info Sections Grid (Motivation, Substitution, Support) -->
+                <div class="info-grid-wrapper">
+                    <div class="info-card">
+                        <h3>Política de Motivação</h3>
+                        <p>Para assegurar um desempenho cada vez melhor de nossos funcionários nas suas respectivas
+                            funções, a Luten promove programas de motivação para o quadro de colaboradores. Compromisso
+                            com o bem-estar da equipe.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Substituição de Funcionários</h3>
+                        <p>A Luten estimula o desenvolvimento de seus profissionais e assegura todos os direitos. Em
+                            casos de férias ou licenças, sempre avisamos nossos clientes com antecedência, para que o
+                            substituto assuma a posição sem surpresas.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Estrutura de Apoio</h3>
+                        <p>A Luten oferece apoio 24h abrangendo uma equipe altamente capacitada. Nossa equipe, composta
+                            por profissionais especializados, oferece soluções em terceirização para os mais diversos
+                            setores.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Application Form Section (Full Width Background) -->
+        <section class="application-full-section">
+            <div class="container">
+                <div class="form-wrapper-centered">
+                    <div class="form-header-center">
+                        <h2>Junte-se ao Time</h2>
+                        <p>Envie seu currículo e faça parte da nossa história.</p>
+                    </div>
+
+                    <form class="rh-form-new">
+                        <div class="form-row">
                             <div class="form-group">
                                 <label for="nome">Nome Completo</label>
                                 <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
                             </div>
-
                             <div class="form-group">
                                 <label for="telefone">Telefone / WhatsApp</label>
                                 <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
                             </div>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="vaga">Interesse na Vaga</label>
-                                <select id="vaga" name="vaga" required>
-                                    <option value="" disabled selected>Selecione uma opção</option>
-                                    <option value="limpeza">Auxiliar de Limpeza</option>
-                                    <option value="portaria">Controlador de Acesso / Portaria</option>
-                                    <option value="jardinagem">Jardinagem</option>
-                                    <option value="recepcao">Recepção</option>
-                                    <option value="banco">Banco de Talentos</option>
-                                </select>
-                            </div>
+                        <div class="form-group">
+                            <label for="vaga">Interesse na Vaga</label>
+                            <select id="vaga" name="vaga" required>
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="limpeza">Auxiliar de Limpeza</option>
+                                <option value="portaria">Controlador de Acesso / Portaria</option>
+                                <option value="jardinagem">Jardinagem</option>
+                                <option value="recepcao">Recepção</option>
+                                <option value="banco">Banco de Talentos</option>
+                            </select>
+                        </div>
 
-                            <button type="submit" class="btn btn-primary btn-block">Enviar Candidatura</button>
-                        </form>
-                    </div>
+                        <div class="form-group">
+                            <label for="mensagem">Sobre você (Opcional)</label>
+                            <textarea id="mensagem" name="mensagem" rows="3"
+                                placeholder="Resumo de experiência..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Candidatura</button>
+                    </form>
                 </div>
-
             </div>
         </section>
     </main>
@@ -152,7 +206,7 @@
                 <div class="footer-col footer-contact">
                     <h4>Fale Conosco</h4>
                     <p>📧 tenoriolt@outlook.com.br</p>
-                    <p>📞 (11) 99999-9999</p>
+                    <p>📞 11 94591-8754</p>
                     <p>📍 São Paulo, SP</p>
                 </div>
             </div>
