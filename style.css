@@ -1521,47 +1521,75 @@ background: linear-gradient(90deg, var(--color-gold), #fff);
     }
 }
 
-/* Workflow Styles */
+/* Workflow Styles - High Contrast Fix */
 .workflow-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .workflow-step {
     text-align: center;
-    padding: 1.5rem;
+    padding: 2.5rem 2rem 2rem;
     background: #fff;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
-    border-bottom: 3px solid transparent;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    /* Removed overflow:hidden so shadow/badge isn't clipped if we decide to overlap later, 
+       but for this design we keep it contained but spacious */
 }
 
 .workflow-step:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     box-shadow: var(--shadow-md);
-    border-bottom-color: var(--color-gold);
+    border-color: var(--color-gold);
 }
 
+/* Number Styling - Legible Badge */
 .step-number {
-    font-size: 2.5rem;
+    position: relative;
+    top: auto;
+    right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: var(--color-luten-deep);
+    color: var(--color-gold);
+    font-size: 1.8rem;
     font-weight: 700;
-    color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 0.5rem;
-    line-height: 1;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    /* Center horizontally and push content down */
+    box-shadow: 0 5px 15px rgba(15, 23, 42, 0.2);
+    border: 2px solid var(--color-gold);
+    z-index: 2;
+    font-family: var(--font-heading);
 }
 
+/* Card Content */
 .workflow-step h4 {
-    color: var(--color-luten-slate);
-    margin-bottom: 0.5rem;
+    color: var(--color-luten-deep);
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 .workflow-step p {
-    font-size: 0.9rem;
-    color: #666;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
 }
+
+/* Remove the previous decorative pseudo-element circle as the number badge now serves this purpose */
+.workflow-step::before {
+    display: none;
+}
+
 
 /* Clients Section */
 .clients-section {
@@ -2070,6 +2098,7 @@ html {
         /* Keep list left-aligned but centered block */
     }
 }
+
 /* --- Final RH Page Refinements --- */
 .rh-recruitment,
 .rh-benefits,
@@ -2102,15 +2131,17 @@ html {
 /* Ensure mobile stacking for benefits is perfect */
 @media (max-width: 600px) {
     .benefits-grid-display {
-        grid-template-columns: 1fr; /* Full stack on small mobile */
+        grid-template-columns: 1fr;
+        /* Full stack on small mobile */
         gap: 1.5rem;
     }
-    
+
     .recruitment-card {
         padding: 2rem 1.5rem;
-        text-align: left; /* Better readability on mobile */
+        text-align: left;
+        /* Better readability on mobile */
     }
-    
+
     .page-title {
         font-size: 2.2rem;
     }
@@ -2127,7 +2158,8 @@ html {
 
 @media (min-width: 900px) {
     .compliance-content {
-        padding: 5rem 0 8rem; /* Extra padding at bottom to avoid footer glue */
+        padding: 5rem 0 8rem;
+        /* Extra padding at bottom to avoid footer glue */
     }
 }
 
@@ -2167,7 +2199,7 @@ html {
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -2220,11 +2252,13 @@ html {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     }
 }
+
 @media (max-width: 600px) {
     .steps-container {
-        grid-template-columns: 1fr; /* Stack on small mobile */
+        grid-template-columns: 1fr;
+        /* Stack on small mobile */
     }
-    
+
     .section-title-start {
         font-size: 1.8rem;
         padding-left: 1rem;
@@ -2244,7 +2278,7 @@ html {
     color: white;
     box-shadow: var(--shadow-md);
     position: relative;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .legal-header {
@@ -2288,7 +2322,7 @@ html {
     background: rgba(255, 255, 255, 0.05);
     padding: 2.5rem;
     border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .legal-benefits-box h3 {
@@ -2317,12 +2351,15 @@ html {
     .legal-card {
         padding: 2rem 1.5rem;
     }
+
     .legal-header h2 {
         font-size: 2rem;
     }
+
     .legal-intro {
         text-align: left;
     }
+
     .legal-benefits-box {
         padding: 1.5rem;
     }
@@ -2361,7 +2398,7 @@ html {
     background: #fff;
     padding: 2.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     text-align: left;
     transition: transform 0.3s ease;
     border: 1px solid #f0f0f0;
@@ -2369,7 +2406,7 @@ html {
 
 .benefit-clean-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-color: var(--color-gold);
 }
 
