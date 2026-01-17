@@ -514,7 +514,7 @@ h3 {
 
 /* Serviços */
 .services {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) 0;
     background-color: var(--color-white-ice);
 }
 
@@ -723,7 +723,7 @@ h3 {
 .rh-benefits,
 .rh-info,
 .contact-section {
-    padding: var(--spacing-lg) 0;
+    padding: 3rem 0;
 }
 
 .legal-card {
@@ -1488,6 +1488,121 @@ h3 {
         /* Movemeto até -50% porque duplicaremos o conteúdo no HTML */
         transform: translateX(-50%);
     }
+}
+
+/* =========================================
+   HOME PAGE SERVICE CARDS (Compact)
+   ========================================= */
+
+.service-home-card {
+    background: #fff;
+    width: 100%;
+    /* Altura um pouco menor que o poster da pg serviços */
+    min-height: 400px;
+    border-radius: 16px;
+    padding: 0;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(128, 155, 184, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-home-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    border-color: var(--color-gold);
+}
+
+.service-home-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    /* Barra um pouco mais fina */
+    background: var(--color-gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+    z-index: 10;
+}
+
+.service-home-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-home-card .poster-image {
+    width: 100%;
+    height: 160px;
+    /* Imagem mais baixa para home */
+    overflow: hidden;
+    position: relative;
+}
+
+.service-home-card .poster-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.service-home-card:hover .poster-image img {
+    transform: scale(1.1);
+}
+
+.service-home-card .poster-icon {
+    width: 70px;
+    /* Ícone menor */
+    height: 70px;
+    font-size: 2rem;
+    margin-top: -35px;
+    /* Ajuste para sobreposição */
+    background: #fff;
+    border: 3px solid #fff;
+    box-shadow: var(--shadow-sm);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-luten-steel);
+    z-index: 5;
+    transition: var(--transition);
+}
+
+.service-home-card:hover .poster-icon {
+    background: var(--color-luten-deep);
+    color: var(--color-gold);
+    transform: scale(1.1) rotate(5deg);
+    border-color: var(--color-luten-deep);
+}
+
+.service-home-card .poster-content {
+    padding: 0 1.5rem 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.service-home-card h3 {
+    font-size: 1.3rem;
+    /* Título levemente menor */
+    color: var(--color-luten-deep);
+    margin: 1rem 0 0.8rem;
+    font-weight: 700;
+}
+
+.service-home-card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
 }
 
 /* Ajuste Mobile */

@@ -22,7 +22,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -61,18 +63,17 @@
         <section id="home" class="hero">
             <div class="container hero-container">
                 <div class="hero-content">
-                    
+
                     <div class="hero-brand-wrapper">
-                        <img src="imgs/assets/LUTEN_LOGO HORIZONTAL_branca.png" 
-                             alt="Luten Engenharia de Serviços - Segurança e Facilities" 
-                             class="hero-logo-main">
+                        <img src="imgs/assets/LUTEN_LOGO HORIZONTAL_branca.png"
+                            alt="Luten Engenharia de Serviços - Segurança e Facilities" class="hero-logo-main">
                     </div>
 
                     <p class="hero-subtitle">
                         Há 27 anos definindo o padrão de excelência em terceirização, entregando
                         soluções robustas para empresas que exigem o melhor.
                     </p>
-                    
+
                     <div class="hero-actions">
                         <a href="contato.html" class="btn btn-primary">Solicite uma Cotação</a>
                         <a href="servicos.html" class="btn btn-outline-light">Nossos Serviços</a>
@@ -116,70 +117,95 @@
                 </div>
 
                 <div class="services-grid">
-                    <article class="service-card">
-                        <div class="card-icon"><i class="bi bi-stars"></i></div>
-                        <h3>Limpeza Profissional</h3>
-                        <p>Higienização técnica e conservação predial com protocolos rigorosos de qualidade.</p>
-                    </article>
+                    <div class="service-home-card">
+                        <div class="poster-image">
+                            <img src="./imgs/services/limpeza2.png" alt="Limpeza Profissional" loading="lazy">
+                        </div>
+                        <div class="poster-icon"><i class="bi bi-stars"></i></div>
+                        <div class="poster-content">
+                            <h3>Limpeza Profissional</h3>
+                            <p>Higienização técnica e conservação predial com protocolos rigorosos de qualidade.</p>
+                        </div>
+                    </div>
 
-                    <article class="service-card">
-                        <div class="card-icon"><i class="bi bi-shield-check"></i></div>
-                        <h3>Portaria e Controle</h3>
-                        <p>Profissionais treinados para garantir a segurança e o controle de acesso do seu patrimônio.
-                        </p>
-                    </article>
+                    <div class="service-home-card">
+                        <div class="poster-image">
+                            <img src="./imgs/services/portaria2.png" alt="Portaria e Controle" loading="lazy">
+                        </div>
+                        <div class="poster-icon"><i class="bi bi-shield-check"></i></div>
+                        <div class="poster-content">
+                            <h3>Portaria e Controle</h3>
+                            <p>Profissionais treinados para garantir a segurança e o controle de acesso do seu
+                                patrimônio.
+                            </p>
+                        </div>
+                    </div>
 
-                    <article class="service-card">
-                        <div class="card-icon"><i class="bi bi-person-workspace"></i></div>
-                        <h3>Recepção Corporativa</h3>
-                        <p>Atendimento de excelência para causar a melhor primeira impressão aos seus clientes.</p>
-                    </article>
+                    <div class="service-home-card">
+                        <div class="poster-image">
+                            <img src="./imgs/services/recepcao2.png" alt="Recepção Corporativa" loading="lazy">
+                        </div>
+                        <div class="poster-icon"><i class="bi bi-person-workspace"></i></div>
+                        <div class="poster-content">
+                            <h3>Recepção Corporativa</h3>
+                            <p>Atendimento de excelência para causar a melhor primeira impressão aos seus clientes.</p>
+                        </div>
+                    </div>
 
-                    <article class="service-card">
-                        <div class="card-icon"><i class="bi bi-tree"></i></div>
-                        <h3>Jardinagem e Paisagismo</h3>
-                        <p>Manutenção de áreas verdes, poda e tratamentos para valorizar seu ambiente externo.</p>
-                    </article>
+                    <div class="service-home-card">
+                        <div class="poster-image">
+                            <img src="./imgs/services/jardinagem.png" alt="Jardinagem e Paisagismo" loading="lazy">
+                        </div>
+                        <div class="poster-icon"><i class="bi bi-tree"></i></div>
+                        <div class="poster-content">
+                            <h3>Jardinagem e Paisagismo</h3>
+                            <p>Manutenção de áreas verdes, poda e tratamentos para valorizar seu ambiente externo.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        
-       <section class="clients-carousel-section">
-    <div class="container">
-        <h2 class="section-title-center" style="text-align: center;">Quem Confia na Luten</h2>
-        
-        <div class="carousel-wrapper">
-            <div class="carousel-track">
-                
-                <div class="client-logo-item" title="P4 Engenharia">
-                    <img src="./imgs/clientes/P4 ENGENHARIA.png" alt="Logo P4 Engenharia"> 
-                </div>
 
-                <div class="client-logo-item" title="Tech Casa">
-                    <img src="./imgs/clientes/TECH CASA.png" alt="Logo Tech Casa">
-                </div>
+        <section class="clients-carousel-section">
+            <div class="container">
+                <h2 class="section-title-center" style="text-align: center;">Quem Confia na Luten</h2>
 
-                <div class="client-logo-item" title="Groupon">
-                    <img src="./imgs/clientes/GROUPON.png" alt="Logo Groupon">
-                </div>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track">
 
-                <div class="client-logo-item" title="Patrimônio">
-                    <img src="./imgs/clientes/PATRIMONIO.png" alt="Logo Patrimônio">
-                </div>
-                 <div class="client-logo-item" title="VRV Construtora">
-                    <img src="./imgs/clientes/VRV.png" alt="Logo VRV Construtora">
-                </div>
+                        <div class="client-logo-item" title="P4 Engenharia">
+                            <img src="./imgs/clientes/P4 ENGENHARIA.png" alt="Logo P4 Engenharia">
+                        </div>
 
-                <div class="client-logo-item"><img src="./imgs/clientes/P4 ENGENHARIA.png" alt="Logo P4 Engenharia"></div>
-                <div class="client-logo-item"><img src="./imgs/clientes/TECH CASA.png" alt="Logo Tech Casa"></div>
-                <div class="client-logo-item"><img src="./imgs/clientes/GROUPON.png" alt="Logo Groupon"></div>
-                <div class="client-logo-item"><img src="./imgs/clientes/PATRIMONIO.png" alt="Logo Patrimônio"></div>
-                <div class="client-logo-item"><img src="./imgs/clientes/VRV.png" alt="Logo VRV Construtora"></div>
+                        <div class="client-logo-item" title="Tech Casa">
+                            <img src="./imgs/clientes/TECH CASA.png" alt="Logo Tech Casa">
+                        </div>
 
+                        <div class="client-logo-item" title="Groupon">
+                            <img src="./imgs/clientes/GROUPON.png" alt="Logo Groupon">
+                        </div>
+
+                        <div class="client-logo-item" title="Patrimônio">
+                            <img src="./imgs/clientes/PATRIMONIO.png" alt="Logo Patrimônio">
+                        </div>
+                        <div class="client-logo-item" title="VRV Construtora">
+                            <img src="./imgs/clientes/VRV.png" alt="Logo VRV Construtora">
+                        </div>
+
+                        <div class="client-logo-item"><img src="./imgs/clientes/P4 ENGENHARIA.png"
+                                alt="Logo P4 Engenharia"></div>
+                        <div class="client-logo-item"><img src="./imgs/clientes/TECH CASA.png" alt="Logo Tech Casa">
+                        </div>
+                        <div class="client-logo-item"><img src="./imgs/clientes/GROUPON.png" alt="Logo Groupon"></div>
+                        <div class="client-logo-item"><img src="./imgs/clientes/PATRIMONIO.png" alt="Logo Patrimônio">
+                        </div>
+                        <div class="client-logo-item"><img src="./imgs/clientes/VRV.png" alt="Logo VRV Construtora">
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
     </main>
 
     <footer class="footer" id="contato">
