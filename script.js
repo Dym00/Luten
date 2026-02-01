@@ -72,4 +72,51 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // --- FORM HANDLING LOGIC (MAILTO) ---
+
+    // Generic function to send email via mailto
+    const sendMailTo = (subject, body) => {
+        const recipient = 'tenoriolt@outlook.com.br';
+        const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+    };
+
+    // 1. Contact Page Form (Solicitar Orçamento)
+    const quoteForm = document.querySelector('.quote-form');
+    if (quoteForm) {
+        quoteForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const nome = quoteForm.querySelector('#nome').value;
+            const empresa = quoteForm.querySelector('#empresa').value;
+            const cargo = quoteForm.querySelector('#cargo').value || 'Não informado';
+            const telefone = quoteForm.querySelector('#telefone_contato').value;
+            const mensagem = quoteForm.querySelector('#mensagem').value;
+
+            const subject = `Solicitação de Orçamento - ${empresa}`;
+            const body = `Nome: ${nome}\nEmpresa: ${empresa}\nCargo: ${cargo}\nTelefone: ${telefone}\n\nMensagem:\n${mensagem}`;
+
+            sendMailTo(subject, body);
+        });
+    }
+
+    // 2. RH Page Form (Trabalhe Conosco)
+    const rhForm = document.querySelector('.rh-form');
+    if (rhForm) {
+        rhForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const nome = rhForm.querySelector('#nome').value;
+            const telefone = rhForm.querySelector('#telefone').value;
+            const vagaSelect = rhForm.querySelector('#vaga');
+            const vagaNome = vagaSelect.options[vagaSelect.selectedIndex].text;
+            const mensagem = rhForm.querySelector('#mensagem').value;
+
+            const subject = `Candidatura Luten - ${vagaNome}`;
+            const body = `Nome: ${nome}\nTelefone: ${telefone}\nVaga de Interesse: ${vagaNome}\n\nSobre o candidato:\n${mensagem}`;
+
+            sendMailTo(subject, body);
+        });
+    }
 });
